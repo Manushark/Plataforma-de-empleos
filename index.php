@@ -97,7 +97,7 @@ include 'includes/header.php';
                         <div class="card job-card h-100 fade-in">
                             <div class="card-header d-flex align-items-center">
                                 <?php if (!empty($oferta['empresa_logo'])): ?>
-                                    <img src="/empleos_web/uploads/logos/<?= $oferta['empresa_logo'] ?>" alt="Logo" class="company-logo me-3">
+                                    <img src="/plataforma-de-empleos/uploads/logos/<?= $oferta['empresa_logo'] ?>" alt="Logo" class="company-logo me-3">
                                 <?php else: ?>
                                     <div class="company-logo me-3 d-flex align-items-center justify-content-center bg-light">
                                         <i class="fas fa-building fa-2x text-secondary"></i>

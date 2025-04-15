@@ -13,13 +13,13 @@ iniciarSesion();
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <!-- Estilos personalizados -->
-    <link rel="stylesheet" href="/empleos_web/assets/css/styles.css">
+    <link rel="stylesheet" href="/plataforma-de-empleos/assets/css/styles.css">
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" href="/empleos_web/index.php">
+                <a class="navbar-brand" href="/plataforma-de-empleos/index.php">
                     <i class="fas fa-briefcase me-2"></i>
                     EmpleosDirect
                 </a>
@@ -29,24 +29,24 @@ iniciarSesion();
                 <div class="collapse navbar-collapse" id="navbarMain">
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="/empleos_web/index.php">Inicio</a>
+                            <a class="nav-link" href="/plataforma-de-empleos/index.php">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/empleos_web/ofertas.php">Ofertas de Empleo</a>
+                            <a class="nav-link" href="/plataforma-de-empleos/ofertas.php">Ofertas de Empleo</a>
                         </li>
                         <?php if (esCandidato()): ?>
                             <li class="nav-item">
-                                <a class="nav-link" href="/empleos_web/candidatos/mi_cv.php">Mi CV</a>
+                                <a class="nav-link" href="/plataforma-de-empleos/candidatos/formulario_CV.php">Mi CV</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/empleos_web/candidatos/mis_aplicaciones.php">Mis Aplicaciones</a>
+                                <a class="nav-link" href="/plataforma-de-empleos/candidatos/mis_aplicaciones.php">Mis Aplicaciones</a>
                             </li>
                         <?php elseif (esEmpresa()): ?>
                             <li class="nav-item">
-                                <a class="nav-link" href="/empleos_web/empresas/mis_ofertas.php">Mis Ofertas</a>
+                                <a class="nav-link" href="/plataforma-de-empleos/empresas/mis_ofertas.php">Mis Ofertas</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/empleos_web/empresas/nueva_oferta.php">Publicar Oferta</a>
+                                <a class="nav-link" href="/plataforma-de-empleos/empresas/nueva_oferta.php">Publicar Oferta</a>
                             </li>
                         <?php endif; ?>
                     </ul>
@@ -59,20 +59,20 @@ iniciarSesion();
                                 </a>
                                 <ul class="dropdown-menu">
                                     <?php if (esCandidato()): ?>
-                                        <li><a class="dropdown-item" href="/empleos_web/candidatos/perfil.php">Mi Perfil</a></li>
+                                        <li><a class="dropdown-item" href="/plataforma-de-empleos/candidatos/perfil.php">Mi Perfil</a></li>
                                     <?php elseif (esEmpresa()): ?>
-                                        <li><a class="dropdown-item" href="/empleos_web/empresas/perfil.php">Perfil de Empresa</a></li>
+                                        <li><a class="dropdown-item" href="/plataforma-de-empleos/empresas/perfil.php">Perfil de Empresa</a></li>
                                     <?php endif; ?>
                                     <li><hr class="dropdown-divider"></li>
-                                    <li><a class="dropdown-item" href="/empleos_web/logout.php">Cerrar Sesión</a></li>
+                                    <li><a class="dropdown-item" href="/plataforma-de-empleos/logout.php">Cerrar Sesión</a></li>
                                 </ul>
                             </li>
                         <?php else: ?>
                             <li class="nav-item">
-                                <a class="nav-link" href="/empleos_web/login.php">Iniciar Sesión</a>
+                                <a class="nav-link" href="/plataforma-de-empleos/login.php">Iniciar Sesión</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/empleos_web/registro.php">Registrarse</a>
+                                <a class="nav-link" href="/plataforma-de-empleos/registro.php">Registrarse</a>
                             </li>
                         <?php endif; ?>
                     </ul>

@@ -98,7 +98,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             // Mensaje de éxito y redirección
             if ($tipo === 'candidato') {
                 mostrarNotificacion("¡Registro exitoso! Ahora puedes completar tu CV", "success");
-                header('Location: candidatos/mi_cv.php');
+                header('Location: candidatos/formulario_CV.php');
             } else {
                 mostrarNotificacion("¡Registro exitoso! Ahora puedes completar el perfil de tu empresa", "success");
                 header('Location: empresas/perfil.php');

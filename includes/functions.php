@@ -29,7 +29,7 @@ function esEmpresa() {
 // Redirigir si no está autenticado
 function requiereAutenticacion() {
     if (!estaAutenticado()) {
-        header('Location: /empleos_web/login.php');
+        header('Location: /Plataforma-de-empleos/login.php');
         exit;
     }
 }
@@ -38,7 +38,7 @@ function requiereAutenticacion() {
 function requiereCandidato() {
     requiereAutenticacion();
     if (!esCandidato()) {
-        header('Location: /empleos_web/index.php');
+        header('Location: /Plataforma-de-empleos/index.php');
         exit;
     }
 }
@@ -47,7 +47,7 @@ function requiereCandidato() {
 function requiereEmpresa() {
     requiereAutenticacion();
     if (!esEmpresa()) {
-        header('Location: /empleos_web/index.php');
+        header('Location: /Plataforma-de-empleos/index.php');
         exit;
     }
 }

@@ -10,9 +10,9 @@
                 <div class="col-md-4">
                     <h5>Enlaces Rápidos</h5>
                     <ul class="list-unstyled">
-                        <li><a href="/empleos_web/index.php" class="text-white">Inicio</a></li>
-                        <li><a href="/empleos_web/ofertas.php" class="text-white">Buscar Empleos</a></li>
-                        <li><a href="/empleos_web/empresas/index.php" class="text-white">Para Empresas</a></li>
+                        <li><a href="/plataforma-de-empleos/index.php" class="text-white">Inicio</a></li>
+                        <li><a href="/plataforma-de-empleos/ofertas.php" class="text-white">Buscar Empleos</a></li>
+                        <li><a href="/plataforma-de-empleos/empresas/index.php" class="text-white">Para Empresas</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4">
@@ -33,6 +33,6 @@
     <!-- Bootstrap JS y Popper.js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Script personalizado -->
-    <script src="/empleos_web/assets/js/script.js"></script>
+    <script src="/plataforma-de-empleos/assets/js/script.js"></script>
 </body>
 </html>
