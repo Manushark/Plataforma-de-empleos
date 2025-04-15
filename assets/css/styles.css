@@ -1,0 +1,100 @@
+/* Estilos generales */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f9fa;
+}
+
+.container {
+    flex: 1;
+}
+
+/* Estilos de tarjetas */
+.card {
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-header {
+    font-weight: bold;
+    background-color: #f8f9fa;
+}
+
+/* Estilos para listas de ofertas */
+.job-card {
+    border-left: 4px solid #007bff;
+}
+
+.job-card .company-logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+/* Estilos para formularios */
+.form-control:focus {
+    box-shadow: 0 0 0 0.25rem rgba(0, 123, 255, 0.25);
+    border-color: #80bdff;
+}
+
+.required-field:after {
+    content: "*";
+    color: red;
+    margin-left: 4px;
+}
+
+/* Estilos para perfil de candidato */
+.profile-header {
+    background-color: #e9ecef;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para botones */
+.btn-apply {
+    border-radius: 20px;
+    padding: 8px 25px;
+    font-weight: 500;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+/* Estilos responsive */
+@media (max-width: 768px) {
+    .profile-header {
+        text-align: center;
+    }
+    
+    .profile-photo {
+        margin-bottom: 15px;
+    }
+}
