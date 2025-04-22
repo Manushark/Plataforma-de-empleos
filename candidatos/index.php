@@ -222,8 +222,40 @@ $user_type = getUserType();
                                 <p class="text-muted mb-0">Diseñadora Gráfica</p>
                             </div>
                         </div>
+<<<<<<< Updated upstream
                         <p class="card-text">"La posibilidad de tener un CV digital completo y poder adjuntar mi portafolio ha hecho que consiga entrevistas en empresas de primer nivel."</p>
                     </div>
+=======
+                    <?php else: ?>
+                        <div class="row">
+                            <?php foreach($ofertas_recomendadas as $oferta): ?>
+                                <div class="col-md-6 mb-3">
+                                    <div class="card job-card h-100">
+                                        <div class="card-header d-flex align-items-center">
+                                            <?php if (!empty($oferta['empresa_logo'])): ?>
+                                                <img src="/plataforma-de-empleos/uploads/logos/<?= $oferta['empresa_logo'] ?>" alt="Logo" class="company-logo me-3">
+                                            <?php else: ?>
+                                                <div class="company-logo me-3 d-flex align-items-center justify-content-center bg-light">
+                                                    <i class="fas fa-building fa-2x text-secondary"></i>
+                                                </div>
+                                            <?php endif; ?>
+                                            <h5 class="card-title mb-0"><?= sanitizarHTML($oferta['titulo']) ?></h5>
+                                        </div>
+                                        <div class="card-body">
+                                            <h6 class="card-subtitle mb-2 text-muted"><?= sanitizarHTML($oferta['empresa_nombre']) ?></h6>
+                                            <p class="card-text">
+                                                <?= substr(sanitizarHTML($oferta['descripcion']), 0, 100) . '...' ?>
+                                            </p>
+                                        </div>
+                                        <div class="card-footer bg-white">
+                                            <a href="../empresas/detalle-oferta.php?id=<?= $oferta['id'] ?>" class="btn btn-outline-primary btn-sm w-100">Ver detalles</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            <?php endforeach; ?>
+                        </div>
+                    <?php endif; ?>
+>>>>>>> Stashed changes
                 </div>
             </div>
         </div>

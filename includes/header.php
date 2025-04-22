@@ -46,7 +46,7 @@ iniciarSesion();
                                 <a class="nav-link" href="/plataforma-de-empleos/empresas/mis_ofertas.php">Mis Ofertas</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/plataforma-de-empleos/empresas/nueva_oferta.php">Publicar Oferta</a>
+                                <a class="nav-link" href="/plataforma-de-empleos/empresas/crear-oferta.php">Publicar Oferta</a>
                             </li>
                         <?php endif; ?>
                     </ul>
@@ -59,7 +59,7 @@ iniciarSesion();
                                 </a>
                                 <ul class="dropdown-menu">
                                     <?php if (esCandidato()): ?>
-                                        <li><a class="dropdown-item" href="/plataforma-de-empleos/candidatos/perfil.php">Mi Perfil</a></li>
+                                        <li><a class="dropdown-item" href="/plataforma-de-empleos/candidatos/index.php">Mi Perfil</a></li>
                                     <?php elseif (esEmpresa()): ?>
                                         <li><a class="dropdown-item" href="/plataforma-de-empleos/empresas/perfil.php">Perfil de Empresa</a></li>
                                     <?php endif; ?>
