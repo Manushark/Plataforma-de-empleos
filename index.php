@@ -72,7 +72,7 @@ include 'includes/header.php';
                 <?php if (esCandidato()): ?>
                     <a href="ofertas.php" class="btn btn-light btn-lg me-2">Explorar Ofertas</a>
                 <?php elseif (esEmpresa()): ?>
-                    <a href="empresas/nueva_oferta.php" class="btn btn-light btn-lg me-2">Publicar Oferta</a>
+                    <a href="empresas/crear-oferta.php" class="btn btn-light btn-lg me-2">Publicar Oferta</a>
                 <?php endif; ?>
             <?php else: ?>
                 <a href="registro.php?tipo=candidato" class="btn btn-light btn-lg me-2">Soy Candidato</a>
@@ -117,7 +117,7 @@ include 'includes/header.php';
                                 </div>
                             </div>
                             <div class="card-footer bg-white">
-                                <a href="oferta_detalle.php?id=<?= $oferta['id'] ?>" class="btn btn-outline-primary btn-sm w-100">Ver detalles</a>
+                                <a href="/plataforma-de-empleos/ofertas/detalle.php?id=<?= $oferta['id'] ?>" class="btn btn-outline-primary btn-sm w-100">Ver detalles</a>
                             </div>
                         </div>
                     </div>

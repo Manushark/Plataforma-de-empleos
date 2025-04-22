@@ -25,7 +25,7 @@
             </div>
             <hr>
             <div class="text-center">
-                <p>&copy; <?= date('Y') ?> EmpleosDirect - Todos los derechos reservados</p>
+                <p>&copy; <?= date('Y') ?> EmpleosDirect - Creared by Alito 4EVER</p>
             </div>
         </div>
     </footer>

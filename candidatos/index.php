@@ -204,7 +204,7 @@ include '../includes/header.php';
                                             </p>
                                         </div>
                                         <div class="card-footer bg-white">
-                                            <a href="../oferta_detalle.php?id=<?= $oferta['id'] ?>" class="btn btn-outline-primary btn-sm w-100">Ver detalles</a>
+                                            <a href="/plataforma-de-empleos/ofertas/detalle.php?id=<?= $oferta['id'] ?>" class="btn btn-outline-primary btn-sm w-100">Ver detalles</a>
                                         </div>
                                     </div>
                                 </div>
